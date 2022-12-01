@@ -14,7 +14,6 @@ header {
 header a {
   color: #fff;
   text-decoration: none;
-  padding-left: 0.5em;
 }
 
 a.hambuger {
@@ -26,6 +25,7 @@ a.hambuger {
   flex-direction: column;
   height: 110vh;
   background-color: rgb(3, 3, 3);
+  padding-left: 1em;
 }
 
 .topper {
@@ -33,7 +33,6 @@ a.hambuger {
   justify-content: space-between;
   align-items: center;
   color: orange;
-  padding: 1em 1em 1em 1.5em;
 }
 
 .support-text {
@@ -42,14 +41,12 @@ a.hambuger {
   align-items: center;
   font-size: 1.5em;
   font-weight: 300;
-  padding: 0 0 0 1.5em;
 }
 
 .support-para {
   color: #fff;
   font-size: 1.2em;
   font-weight: 300;
-  padding: 0 0 0 2em;
   letter-spacing: 1px;
   line-height: 35px;
 }
