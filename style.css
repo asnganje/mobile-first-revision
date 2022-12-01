@@ -24,7 +24,7 @@ a.hambuger {
 .intro-area {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 110vh;
   background-color: rgb(3, 3, 3);
 }
 
@@ -64,6 +64,10 @@ a.hambuger {
 .social-icons a {
   color: #fff;
   text-decoration: none;
+}
+
+.social-icons li {
+  list-style: none;
 }
 
 /* Media Queries */
