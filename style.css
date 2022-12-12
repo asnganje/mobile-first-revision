@@ -8,7 +8,6 @@ header {
   justify-content: space-between;
   background-color: rgb(55, 54, 54);
   color: #fff;
-  padding-left: 5%;
   height: 100px;
   width: 100%;
 }
@@ -18,17 +17,43 @@ header a {
   text-decoration: none;
 }
 
+.nav-items ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
 a.hambuger {
   display: none;
 }
 
 .intro-area {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  gap: 5%;
   height: 110vh;
   background-color: rgb(3, 3, 3);
   width: 100%;
-  padding-left: 5%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 6em;
+  width: 100%;
+}
+
+.icons ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .topper {
@@ -80,20 +105,35 @@ a.hambuger {
     font-size: 2em;
   }
 
+  nav.nav-items {
+    display: none;
+  }
+
+  .intro-area {
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    background-color: rgb(3, 3, 3);
+    width: 100%;
+  }
+
   .intro {
+    display: flex;
+    flex-direction: column;
     text-align: left;
     margin-top: 6em;
     width: 100%;
   }
 
-  .icons {
+  .icons ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     width: 100%;
   }
 
   ul.social-icons {
+    display: flex;
+    justify-content: center;
     margin-left: 0;
     padding-left: 0;
   }
@@ -152,6 +192,12 @@ a.hambuger {
     font-size: 1.2em;
     font-weight: 300;
     border-radius: 5px;
+    transition: all 1s ease-in-out;
+  }
+
+  .post-btn:hover {
+    background-color: #00ff3c;
+    color: #fff;
   }
 
   .main-cards-container {
@@ -202,6 +248,49 @@ a.hambuger {
     padding: 10px;
     background-color: #ff6b00;
     width: 100%;
+    align-self: center;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 300;
+    border-radius: 5px;
+    transition: all 1s ease-in-out;
+  }
+
+  .see:hover {
+    background-color: #00ff3c;
+    color: #fff;
+  }
+
+  .myForm h3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .thisForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+  }
+
+  .name {
+    border: none;
+  }
+
+  .email {
+    border: none;
+  }
+
+  .btn {
+    padding: 10px;
+    background-color: #ff6b00;
+    width: 35%;
     align-self: center;
     color: #fff;
     font-size: 1.2em;
