@@ -97,6 +97,213 @@ a.hambuger {
   list-style: none;
 }
 
+.recent-work {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+}
+
+.h-and-line {
+  display: flex;
+  width: 100%;
+}
+
+hr {
+  width: 80%;
+  margin-block-start: auto;
+  margin-block-end: auto;
+}
+
+.recent-h2 {
+  font-size: 2em;
+  font-weight: 300;
+  color: rgb(5, 5, 5);
+}
+
+.multi-post {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5%;
+  width: 100%;
+  height: 25em;
+}
+
+.post-lang {
+  text-align: center;
+}
+
+.post-lang li {
+  display: inline;
+  border: 1px solid rgb(77, 74, 74);
+  padding: 15px;
+}
+
+ul.post-lang {
+  padding-left: 0%;
+  margin: 5% 0 5% 0;
+}
+
+.post-btn {
+  text-align: center;
+  padding: 10px;
+  background-color: #ff6b00;
+  width: 50%;
+  align-self: center;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 300;
+  border-radius: 5px;
+  transition: all 1s ease-in-out;
+}
+
+.post-btn:hover {
+  background-color: #00ff3c;
+  color: #fff;
+}
+
+.post-para {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.multi-post-img {
+  display: flex;
+  width: 60%;
+  margin-left: 5%;
+  height: max-content;
+}
+
+.multi-post-text {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 5%;
+  align-items: flex-start;
+}
+
+.main-cards-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 5%;
+  width: 100%;
+  height: 100%;
+}
+
+.cards {
+  background-image: url(./images/grid-image1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 454px;
+}
+
+.hdata {
+  font-size: 20px;
+  color: #fff;
+  width: 70%;
+  margin-top: 45%;
+}
+
+.paraInfo {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  width: 70%;
+}
+
+.proj-list {
+  list-style: none;
+  padding: 5%;
+}
+
+.proj-list li {
+  display: inline;
+  list-style: none;
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+.see {
+  padding: 10px;
+  background-color: #ff6b00;
+  width: 100%;
+  align-self: center;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 300;
+  border-radius: 5px;
+  transition: all 1s ease-in-out;
+}
+
+.see:hover {
+  background-color: #00ff3c;
+  color: #fff;
+}
+
+.myForm {
+  margin-top: 10%;
+}
+
+.contactHeader {
+  display: flex;
+}
+
+.fm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5%;
+}
+
+.thisForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.name {
+  width: 80%;
+  border: none;
+}
+
+.email {
+  width: 80%;
+  border: none;
+}
+
+.myTxtArea {
+  width: 80%;
+  height: 100px;
+}
+
+.btn {
+  padding: 10px;
+  background-color: #ff6b00;
+  width: 35%;
+  align-self: center;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 300;
+  border-radius: 5px;
+}
+
+.hear-about-it {
+  font-size: 30px;
+  font-weight: 300;
+}
+
 /* Media Queries */
 @media screen and (max-width: 600px) {
   a.hambuger {
@@ -138,6 +345,36 @@ a.hambuger {
     padding-left: 0;
   }
 
+  .recent-work {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .h-and-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .multi-post-text {
+    display: flex;
+    flex-direction: column;
+    width: 73%;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .multi-post-img {
+    display: flex;
+    width: 80%;
+    margin-left: 5%;
+    height: max-content;
+  }
+
   .recent-w {
     text-align: center;
   }
@@ -151,6 +388,8 @@ a.hambuger {
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
+    height: 40em;
   }
 
   .multImg {
@@ -164,8 +403,7 @@ a.hambuger {
 
   .post-para {
     text-align: left;
-    width: 90%;
-    padding-left: 6%;
+    width: 100%;
   }
 
   .post-lang {
@@ -259,6 +497,13 @@ a.hambuger {
   .see:hover {
     background-color: #00ff3c;
     color: #fff;
+  }
+
+  .contactHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   .myForm h3 {
